@@ -7,7 +7,7 @@
 .header {
     height: 100px;
     background-color: black;
-    border: aquamarine 3px solid;
+    border: #3289C0 3px solid;
 }
 
 .container {
@@ -31,10 +31,11 @@
 }
 
 .header h1 {
-    color: aquamarine;
+    color: #3289C0;
 }
 
 .navbar li {
+    margin-right: 50px;
     font-weight: lighter;
     color: goldenrod;
 }
@@ -46,4 +47,136 @@
 .navbar li a {
     text-decoration: none;
     color: goldenrod;
+}
+
+.banner {
+    height: 500px;
+    background-image: url(img/jellyfish-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner_cadastro {
+    height: 800px;
+}
+
+.message {
+    margin-right: 250px;
+    width: 10%;
+    color: white;
+    font-size: 30px;
+    /* deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
+    text-shadow: black 2px 2px 2px;
+}
+
+.message span {
+    font-weight: bolder;
+}
+
+.proposito {
+    height: 450px;
+    background-color: #E5E5E5;
+}
+
+.proposito .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proposito .container h2 {
+    background-color: white;
+    color: #E6005A;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.proposito .container .mvv div {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proposito .container .mvv div img {
+    height: 100px;
+}
+
+.proposito .container .mvv {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.proposito .container .mvv div h3 {
+    color: #E6005A;
+    font-weight: bolder;
+    margin: 25px 0;
+}
+
+.footer {
+    background-color: #3289C0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    color: white;
+}
+
+/* Página de Cadastro e Login */
+.banner .formLogin,
+.banner .formCadastro  {
+    background-color: #E5E5E5;
+    height: 350px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner .formCadastro {
+    height: 700px;
+}
+
+.banner .formLogin h2,
+.banner .formCadastro h2 {
+    color: #E6005A;
+}
+
+.banner .formLogin div,
+.banner .formCadastro div {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .formLogin div span,
+.banner .formCadastro div span {
+    color: #E6005A;
+}
+
+.banner .formLogin div input,
+.banner .formCadastro div input {
+    border: 2px solid #E6005A;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.banner .formLogin button,
+.banner .formCadastro button {
+    background-color: #E6005A;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
 }
